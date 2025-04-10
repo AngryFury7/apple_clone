@@ -1,0 +1,23 @@
+.offerDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    background-color: rgb(19, 18, 18);
+}
+
+:root {
+    --appleFont : "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.offerDiv > span{
+    color : rgb(228, 217, 217);
+    margin : 0px ;
+    font-size: 17px;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    word-spacing: 2px;    
+}
+
+.offerLink{text-decoration: none; color : rgb(59, 59, 255) ; margin-left : 10px ; font-size: 18px;}
+
+

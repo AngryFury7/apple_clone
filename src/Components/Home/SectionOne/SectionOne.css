@@ -1,0 +1,123 @@
+.SectionOne{
+    border: 0px solid white;
+    width: 100vw;
+    padding : 50px 0px 60px 0px;
+}
+
+
+
+
+.SectionOneDeclaration{display: flex;gap : 10px; ; flex-direction: row;flex-wrap: wrap;font-family: var(--appleFont);font-size: 34px;color: var(--SecondColor);padding-left: 139px;}
+.SectionOneDeclaration > span:nth-child(1){color : var(--FirstColor)}
+
+.SectionOneScroll{
+    overflow-x: scroll;
+    padding-top : 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap : 30px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.SectionOneScroll > div{
+    transform: translate(139px,0%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap : 30px;
+    padding-right : 180px;
+    padding-bottom : 20px;
+}
+
+.SectionOneScroll::-webkit-scrollbar{display: none;}
+
+.SectionOneScroll > div > div{
+    height: 500px;
+    border: 0px solid white;
+    aspect-ratio: 4/5;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+img{height: 100%;width: 100%;object-fit: cover;}
+
+.SODeactivated{display: none;}
+
+.SOimageHolder{
+    position: absolute;
+    top : 0% ;
+    left  : 0%;
+    height: 100%;
+    width : 100%;
+}
+
+.SOA{
+    display: inline-block;
+    position: absolute;
+    top : calc((22 / 500) * 100%);
+    left : calc((30 / 400) * 100%);
+    font-family: var(--appleFont);
+    font-size: 13px;
+    color : black
+}
+
+
+.SOH{
+    display: inline-block;
+    position: absolute;
+    top : calc(((22 / 500) * 100%) + 25px);
+    left : calc((30 / 400) * 100%);
+    font-family: var(--appleFont);
+    font-size: 28px;
+    color : black;
+    font-weight: 600;
+    height: 30px;
+    letter-spacing: 0.196px;
+
+}
+
+.SOL{
+    display: inline-block;
+    position: absolute;
+    top : calc(((22 / 500) * 100%) + 65px);
+    left : calc((30 / 400) * 100%);
+    font-family: var(--appleFont);
+    font-size: 16px;
+    color : black;
+    font-weight: 550;
+    height: 30px;
+    letter-spacing: 0.196px;
+}
+
+
+.SOP{
+    display: inline-block;
+    position: absolute;
+    top : calc(((22 / 500) * 100%) + 90px);
+    left : calc((30 / 400) * 100%);
+    font-family: var(--appleFont);
+    font-size: 15px;
+    color : black;
+    font-weight: 400;
+    height: 30px;
+    letter-spacing: 0.196px;
+}
+
+.SOL_AppleIntelligence{
+    background-image: linear-gradient(108deg, #006bb9 0, #903fcf 32%, #cf0f3c 84%, #b84100 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.SOH_white{
+    color : rgb(231, 225, 214) !important
+}
+
+.SOH_brown{color : rgb(182, 68, 0);font-weight: 600 ;letter-spacing: 0.12px;}
+
+
+

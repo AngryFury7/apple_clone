@@ -1,0 +1,319 @@
+.MacLineupwrap{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: var(--SecondBGcolor);
+}
+
+.MacLineup{
+    background-color: var(--SecondBGcolor);
+    padding-top : 80px;
+    padding-inline : 130px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    width: max-content;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    ::-webkit-scrollbar{display: none;}
+}
+
+.MacLineupTopWrap{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    gap : 140px
+}
+
+.MacLineup_Product_outerWrap{
+    position: relative;
+    height: 100%;
+    width : auto;
+    font-family: var(--appleFont);
+}
+
+.MacLineup_Product_Main{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+}
+
+.MacLineup_Product_ProductInfoHolder{
+    display: flex;
+    align-items: center;justify-content: flex-start;
+    flex-direction: column;
+}
+
+.MacLineUp_Laptop_ProductInfo_Color_List
+{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap : 9px;  
+    align-items: center;
+    justify-content: center;
+    padding : 0px  
+}
+
+.MacLineUp_ProductInfo_NewlyAdded{
+    display: inline-block;
+}
+
+
+.MacLineup_ProductInfo_ProductMiniDescription
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap : 7px
+}
+
+.ListItem_Product_Color_Options{
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+}
+
+.MacLineup_ProductInfo_LearnMore_Buy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap : 30px;
+    padding-block: 40px;
+}
+
+
+.MacLineup_ProductInfo_LearnMore_Buy__LearnMore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 110px;
+    color : white;
+    background-color: rgb(0, 100, 255);
+    font-family: var(--appleFont);
+    font-size: 15px;
+    border-radius: 20px;
+    transition: all 0.1s ease-in-out;
+}
+
+.MacLineup_ProductInfo_LearnMore_Buy__LearnMore:hover {
+    background-color: rgb(73, 126, 206);
+}
+
+.MacLineup_ProductInfo_LearnMore_Buy__LearnMore > span {
+    display: inline-block;
+    transform: translate(0%,-1px);
+}
+
+.MacLineup_Product_Img{cursor: pointer;}
+.MacLineup_Laptop_Product_Img{width: 270px;}
+.MacLineup_Laptop_Product_Img1{height: 134px;}
+.MacLineup_Laptop_Product_Img1{height: 145px;}
+
+.MacLineup_ProductInfo_LearnMore_Buy__LearnMore__Buy
+{
+    color : rgb(0,130,255);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MacLineup_ProductInfo_LearnMore_Buy__LearnMore__Buy::after{
+    content:  "";
+    height: 1px ;
+    width: 0%;
+    background-color: white;
+    position: absolute;
+    top : calc(100% + 4px);
+    transition: all 0.1s ease-in-out;
+}
+
+.MacLineup_ProductInfo_LearnMore_Buy__LearnMore__Buy:hover::after{width: 100%;    transition: all 0.2s ease-in-out;}
+
+.HiddenNewlyAdded{color : transparent}
+
+
+.MacLineUp_ProductInfo_NewlyAdded{
+    font-family: var(--appleFont);
+    font-size: 11px;
+    color : orange;
+    display: inline-block;
+    padding-bottom : 14px;
+    padding-top : 16px
+}
+
+.MacLineUp_ProductInfo_ProductName
+{
+    font-family: var(--appleFont);
+    font-size: 26px;
+    display: inline-block;
+    padding-bottom : 8px;
+    padding-top : 6px;
+    font-weight: 530;
+}
+
+.MacLineUp_ProductInfo_ProductChipSet{
+    font-family: var(--appleFont);
+    font-size: 16px;
+    display: inline-block;
+    padding-bottom : 15px;
+    padding-top : 2px;
+    font-weight: 530;
+}
+
+.MacLineup_ProductInfo_ProductMiniDescription{
+    font-family: var(--appleFont);
+    font-size: 16px;
+    padding-bottom : 15px;
+    padding-top : 2px;
+    color : rgb(216, 216, 216);
+    font-weight: lighter;
+}
+
+.MacLineup_ProductInfo_ProductPrice{
+    font-family: var(--appleFont);
+    font-size: 19px;
+    display: inline-block;
+    padding-bottom : 0px;
+    padding-top : 17px;
+    font-weight: 530 !important;
+}
+
+.LineUpseperator
+{
+    height: 2px;
+    width : 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: gray;
+    margin-block : 40px;
+}
+
+
+/*----------------------------------------------------------------------------     Bottom       ------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------     Bottom       ------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------     Bottom       ------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------     Bottom       ------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------     Bottom       ------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------     Bottom       ------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------     Bottom       ------------------------------------------------------------------------------------------------*/
+
+.MacLineUp_bottom_wrap
+{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap : 140px
+}
+
+
+.MacLineup_ProductSpecs_Main
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+.MacLineup_ProductSpecs_Main > div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.TypeOne
+{
+    font-family: var(--appleFont);
+    color: white;
+    font-size: 26px;
+    display: inline-block;
+}
+
+.TypeTwo
+{
+    font-family: var(--appleFont);
+    color : rgb(216, 216, 216);
+    font-size: 13px;
+    display: inline-block;
+}
+.HiddenNewlyAdded{color : transparent !important}
+
+.MacLineup_ProductSpecs_Main_Spec1
+{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    gap : 21px
+}
+
+.MacLineup_ProductSpecs_Main_Spec1 > span:nth-child(3)
+{
+    transform: translate(0%,-13px);
+}
+
+.MacLineup_ProductSpecs_Main_Spec1 > span:nth-child(4)
+{
+    transform: translate(0%,-25px);
+}
+
+
+.MacLineup_ProductSpecs_Main_Spec2
+{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    gap : 9px
+}
+
+
+.MacLineup_ProductSpecs_Main_Spec3
+{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    gap : 9px
+}
+
+
+.MacLineup_ProductSpecs_Main_Spec4
+{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    gap : 13px
+}
+
+.MacLineup_ProductSpecs_Main_Spec5
+{
+    padding-top: 60px;
+    padding-bottom: 20px;
+    gap : 21px
+}
+
+
+.MacLineup_ProductSpecs_Main_Spec5 > span:nth-child(3)
+{
+    transform: translate(0%,-13px);
+}
+
+.MacLineup_ProductSpecs_Main_Spec5 > span:nth-child(4)
+{
+    transform: translate(0%,-25px);
+}
+
+
+.MacLineup_ProductSpecs_Main_Spec6
+{
+    padding-top: 60px;
+    padding-bottom: 20px;
+    gap : 9px
+}
+
+

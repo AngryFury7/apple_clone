@@ -1,0 +1,166 @@
+:root{
+    --flexRowtype : space-between;
+    --DeactiveDisply : none;
+    --darkColor : rgb(16, 15, 15);
+    --regularDark : rgb(28,29,32)
+}
+
+.navbar
+{
+    height: 50px;
+    width : 100vw ; 
+    background-color: var(--regularDark);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    transition: background-color 0s ease-in-out;
+    z-index: 2;
+}
+
+.darkColorNav{background-color: var(--darkColor) !important;transition: background-color 0s ease-in-out;}
+
+.listofLink
+{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap : 30px;
+    list-style: none;
+    margin : none !important;
+    padding : 0px
+}
+
+a{text-decoration: none;}
+
+.siteLinks > a{color : rgb(190, 187, 187);text-decoration: none;margin : none;position: relative;display: flex; align-items: center;}
+
+
+svg:nth-child(1){ display: flex; align-items: center; justify-content: center;transform: translate(0px , 3px);}
+svg.search { display: flex; align-items: center; justify-content: center;transform: translate(0px , 2px);}
+svg.cart { display: flex; align-items: center; justify-content: center;transform: translate(0px , 2px);}
+.siteLinks:nth-child(1){margin-right : 20px}
+.siteLinks:nth-child(12){margin-left : 20px}
+.siteLinks:nth-child(13){margin-left : 10px}
+.siteLinks:nth-child(14){display: var(--DeactiveDisply);}
+.siteLinks{font-size: 14px;}
+
+
+.hoverNav{
+    position:absolute;
+    height: 50px;;
+    width: 100%;
+    left : 0px;
+    cursor: pointer;
+    background-color: rgba(255,255,255,0);
+}
+
+.BelowNav
+{
+    position: absolute;
+    top: 100% ;
+    height: max-content;
+    display: auto;
+    width: 100vw;
+    left : 0px ;
+    background-color: var(--darkColor);
+    color :white;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    z-index: -1;
+}
+
+.blurNav{
+    position: absolute;
+    top: 100% ;
+    height: calc(100vh - 50px);
+    width: 100vw;
+    left : 0px ;
+    filter: blur(2px);
+    background: var(--myColor); 
+    backdrop-filter: blur(var(--blur,0px));
+    transform: scaleY(1);
+    z-index : -1 ;
+    pointer-events: none;
+}
+
+.BelowNavChilds{
+    padding-top : 33px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap : 100px;
+    padding-bottom :60px;
+    background-color: var(--darkColor);
+    position: absolute;
+    top : 0px;
+    left : 0px;
+    width : 100%;
+}
+
+
+
+.AllowPE{pointer-events: auto !important;}
+
+
+
+
+.BelowNavBlocks{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap : 14px
+}
+
+.BlockOneMain
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap : 14px;
+    font-size: 21px;
+    font-weight: 550;
+    color : rgb(225, 223, 223);
+    cursor: pointer;
+    margin-top : 13px;
+
+}
+
+.BlockOneMain > a {color : rgb(225, 223, 223)}
+.BlockOneTitle , .BlockTwoTitle , .BlockThreeTitle{font-size: 14px; color : rgb(193, 193, 193) ; user-select: none;}
+
+.BlockTwoMain,.BlockThreeMain 
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap : 14px;
+    cursor: pointer;
+    font-weight: 450;
+    margin-top : 13px;
+}
+
+.BlockTwoMain > a , .BlockThreeMain > a  {color :rgb(225, 223, 223) ; font-size : 13px }
+
+
+.BlockOneLower{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap : 14px ;
+    margin-top : 20px;
+    font-size: 11px;
+    color : rgb(78, 76, 76);
+    cursor: pointer;
+}
+
+.BlockOneLower > a{color :rgb(214, 207, 207) ; font-size: 13px;};
+
+
+
+

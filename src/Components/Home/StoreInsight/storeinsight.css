@@ -1,0 +1,105 @@
+:root{
+    --SecondColor : rgb(187, 187, 187);
+    --FirstColor : rgb(255, 242, 242)
+}
+.storeinsight
+{
+    padding : 70px 139px 40px 139px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.storeinsight * {
+    background-color: rgb(28,29,32);
+}
+
+.storeinsightText {font-family: var(--appleFont); color : rgb(187, 187, 187);font-size: 47px;order: 0;}
+.storeinsightText > span {display: inline-block;padding-bottom: 6px;}
+.storeinsightText > span:nth-child(1){color : rgb(255, 242, 242)}
+
+.storeTopProducts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    overflow: visible;
+    flex-wrap: nowrap;
+    gap : 32px;
+    order: 2;
+}
+
+img{height: 100% ;width: 100%; object-fit: cover;}
+.iProductTop{height: 70px; ;aspect-ratio:400/260;}
+.iProductsTopwrap{display: flex;align-items: center;justify-content: center;flex-direction: column;gap : 14px;padding-bottom: 20px;padding-top: 70px;;}
+.iProductsTopwrap > .productLinkTop {font-size: 13px;font-family: var(--appleFont);color : rgb(231, 222, 222) ; font-weight: 530;}
+.iProductsTopwrap > .productLinkTop > span::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(231, 222, 222);
+    top: calc(100% + 4px);
+    transform: translateY(9px);
+    cursor: pointer;
+    transform: scaleX(0);
+    transition: all 0.1s ease-in-out;
+}
+
+  .iProductsTopwrap > .productLinkTop > span{display:inline-block;position: relative;display: flex;align-items: center;justify-content: center;}
+
+  .iProductsTopwrap > .productLinkTop > span:hover::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(231, 222, 222);
+    top: calc(100% + 4px);
+    transform: translateY(9px);
+    cursor: pointer;
+    transform: scaleX(1);
+    transition: all 0.1s ease-in-out;
+  }
+
+
+  .EmployeeImg
+  {
+    height: 35px;
+    background-color: rgb(255,255,255);
+    border-radius: 20px;
+    width: 35px;
+  }
+
+  .StoreSVG{
+    margin-left: 8px;
+  }
+
+  .quickHelp{
+    display: flex;
+    flex-direction: column;
+    gap : 20px
+  }
+
+  .quickHelp  a {color : rgb(187, 187, 231)}
+
+  .topHelp{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap : 3px
+}
+
+
+
+.quickHelp > div{
+    display: flex;
+    gap : 20px;
+    align-items: center;
+    justify-content: flex-start;
+}
+  

@@ -1,0 +1,86 @@
+.SectionTwo{
+    padding : 0px 0px 60px 0px;
+}
+
+.SectionTwodeclaration{display: flex;gap : 10px; ; flex-direction: row;flex-wrap: wrap;font-family: var(--appleFont);font-size: 34px;color: var(--SecondColor);padding-left: 139px;}
+.SectionTwodeclaration > span:nth-child(1){color : var(--FirstColor)}
+
+
+.SectionTwoscroll{
+    overflow-x: scroll;
+    padding-top : 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap : 30px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.SectionTwoscroll > div{
+    transform: translate(139px,0%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap : 30px;
+    padding-right : 180px;
+    padding-bottom : 20px;
+}
+
+.STholder{
+    position: relative;
+    height: 500px;
+    aspect-ratio: 24/25;
+    border-radius: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.STimgholder{position: absolute;top : 0px ; left: 0px ; height: 100%; width: 100%;;}
+
+img{height: 100%;width: 100%;object-fit: cover}
+
+.STA , .STI , .STH {position: absolute;color : black;}
+
+.STA {
+    display: inline-block;
+    position: absolute;
+    top : calc((22 / 500) * 100%);
+    left : calc((30 / 480) * 100%);
+    font-family: var(--appleFont);
+    font-size: 14px;
+    color : rgb(110, 110, 115);
+    font-weight: 500;
+}
+
+.STH{
+    position: absolute;
+    top : calc(((22 / 500) * 100%) + 25px);
+    left : calc((30 / 480) * 100%);
+    font-family: var(--appleFont);
+    font-size: 28px;
+    color : black;
+    font-weight: 550;
+    height: 30px;
+    letter-spacing: 0.196px;
+    display: flex;
+    flex-direction: column;
+    word-spacing: -2.37px;
+    align-items: flex-start;
+}
+
+.STH > span:nth-child(2){display: inline-block;transform: translate(0%,-3px);}
+
+.STI
+{
+    display: inline-block;
+    position: absolute;
+    top : calc(((22 / 500) * 100%) + 97px);
+    left : calc((30 / 480) * 100%);
+    font-family: var(--appleFont);
+    font-size: 15px;
+    color : black;
+    font-weight: 400;
+    height: 30px;
+    letter-spacing: 0.196px;
+}

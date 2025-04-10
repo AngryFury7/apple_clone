@@ -1,0 +1,235 @@
+/*importing this file in the Mac.js*/
+
+/*Top Container MacTypes*/
+
+:root{
+    --SecondBGcolor : rgb(33, 35, 38)
+    /*43,45,49*/
+}
+.MacTop_Products_wrap
+{
+    display: flex;align-items: center;justify-content: center;
+    width : 100vw;
+    padding-top : 40px ;
+    padding-bottom : 30px;
+    font-family: var(--appleFont);
+}
+
+.MacTop_Products_ScrollSection
+{
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding-inline: 20px;
+}
+
+.MainPath_MacTOP{fill: rgb(238, 229, 229);}
+
+.MacTop_Product_SpanHolder{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color : white;
+    font-family: var(--appleFont);
+    gap : 3px
+}
+
+
+.MacTop_Product_SVGHolder{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MacTop_Product_outerWrap{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.MacTop_Product_SpanHolder span:nth-child(1){font-size: 12px;font-weight: 0 !important;}
+
+.MacTop_Product_SpanHolder span:nth-child(2){font-size: 9px; padding-bottom: 10px;}
+
+
+
+
+.MacTop_Product_outerWrap:hover .MainPath_MacTOP{
+    fill : rgb(194, 142, 142)
+}
+
+
+.MacTop_Product_outerWrap:hover .MacTop_Product_SpanHolder{
+    color : rgb(194, 142, 142)
+}
+
+.MacTop_Product_outerWrap,.MainPath_MacTOP{transition: color 0.24s ease-in-out ;}
+.MainPath_MacTOP{transition: fill 0.24s ease-in-out ;}
+
+
+/*here ends the top part of the mac section*/
+
+
+.MacTop_offer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: rgb(19, 18, 18);
+    font-family: var(--appleFont);
+    color : rgb(228, 217, 217);
+}
+
+.Mac_Top_Offer_Link{color : rgb(59, 59, 255);margin-left : 10px}
+
+.Mac_Declaration
+{
+    padding-inline : 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block : 75px;
+    font-family: var(--appleFont);
+}
+
+.Mac_MainSpan{
+    font-family: var(--appleFont);
+   font-size: 69px; 
+   font-weight: 520;
+   font-size: normal;
+   letter-spacing: -0.576px;
+}
+
+.Mac_MainRightSpansWrap{display: flex;align-items: flex-start;;justify-content: center;flex-direction: column;}
+
+.Mac_MainRightSpansWrap > span {
+    font-family: var(--appleFont);
+    font-size: 28px; 
+    font-weight: 530;
+    font-size: normal;
+    letter-spacing: -0.576px;
+ }
+
+ .Video_Mac_Welcome{pointer-events: auto;}
+
+
+.Mac_VideoWrap{
+    padding-bottom: 60px;
+    height: 829.797px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.VideoContainerOuter{
+    position: relative;
+    height: 787.797px;
+    width: calc(100%);
+    overflow: hidden;
+
+    /* padding needs to be changed to 139px as inline*/
+}
+
+.VideoContiner{
+    position: absolute;
+    top:0%;
+    left : 0%;
+    height: 100%;
+    width: 100%;
+}
+.Video_Mac_Welcome{object-fit: cover;height: 100%;width: 100%;;}
+
+
+.scrollerSpace{
+    height: 40vh;
+    width: 100vw;;
+    border : 1px solid white
+}
+
+.MacLineup_wrap_container{background-color: var(--SecondBGcolor);padding-top : 140px}
+
+.MacLineup_declaration{display: flex;;align-items: center;justify-content: space-between;;padding-inline: 130px;padding-bottom : 70px}
+.MacLineup_Main_Links{display: flex;justify-content: flex-end;gap : 30px ; align-items: center;}
+
+.MacLineUp_Main_Text{font-family: var(--appleFont);
+color : white;
+font-size: 54px;}
+
+
+.MacLineup_Main_Links > a
+{
+    font-family: var(--appleFont);
+    font-size: 18px;
+    color : rgb(111, 111, 255)
+}
+
+
+.MacLineupButtons_choose_select_wrap{display: flex;;align-items: center;justify-content: flex-start;padding-inline-start: 130px;padding-block : 40px}
+
+.MacLineup_ChooseButtons_outerwrap{display: flex;;align-items: center;justify-content: flex-start;gap : 20px;background-color: rgb(39, 40, 44);position: relative;padding : 10px 15px 10px 15px;border-radius:30px ;}
+.MacLineup_chooseButtons
+{
+    background-color: transparent;
+    height: 40px;
+    width : 110px;
+    outline: none;
+    border-radius: 20px;
+    font-family: var(--appleFont);
+    font-style: normal;
+    font-size: 17px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;justify-content: center;
+    color : white;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    letter-spacing: -0.374px;
+    -webkit-font-smoothing: antialiased;
+    user-select: none;
+
+}
+
+.MacLineup_chooseButtons:nth-child(2)
+{
+    color : rgb(28,29,32)
+}
+
+
+.MacLineup_Slider{
+    
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    top : 10px ;
+    left : 15px;
+    height: 40px;
+    width: 110px;
+    border-radius: 20px;
+}
+
+
+
+.MainLineupContainer{
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background-color: var(--SecondBGcolor);
+}
+
+.MacLineupwrap{
+    position: absolute;
+    top : 0px;
+    background-color: var(--SecondBGcolor);
+}
+
+
+
+
